@@ -1,0 +1,59 @@
+@mixin flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    
+}
+.header{
+    @media(max-width: $sm){
+        padding: 1rem 1rem;
+    }
+    background: $light;
+    padding: 1rem 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .menu{
+        @media(max-width:$md){
+            display: none;
+        }
+        @include flex;
+        p{
+            cursor: pointer;
+            color: $grey;
+        }
+
+        .dropdown{
+            @include flex;
+            gap: 0.4rem;
+        }
+    }
+    .menu-end{
+        @media(max-width:$md){
+            display: none;
+        }
+        @include flex;
+        form{
+            @include flex;
+            gap: 0.3rem;
+            border: 1px solid $black;
+            border-radius: 25px;
+            background: $light;
+            overflow: hidden;
+            input{
+                outline: none;
+                border: none;
+                background: transparent;
+                cursor: pointer;
+                padding: 3px;
+                padding-left: 0.6rem;
+            }
+        }
+        img{
+            cursor: pointer;
+        }
+    }
+    
+}

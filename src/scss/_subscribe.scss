@@ -1,0 +1,78 @@
+.subscribe{
+    @media(max-width: $sm){
+        padding: $paddings;
+    }
+    background-color: white;
+    padding: $padding;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    .jumbotron{
+        @media(max-width: $sm){
+            flex-direction: column;
+            position: relative;
+            top:auto;
+            padding: 1rem;
+            gap: 1rem;
+        }
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        align-self: center;
+        
+        background-color: white;
+        max-width: 85%;
+        justify-self:center;
+        border-radius: 30px;
+        position: absolute;
+        top: -4rem;
+        .pink{
+            font-family: $font;
+            font-size: 2.5rem;
+        }
+
+        form{
+            border: 1px solid $grey;
+            padding: 5px;
+            border-radius: 10px;
+            input{
+                border: none;
+                outline: none;
+                
+            }
+            button{
+                background: inherit;
+                border: 1px solid $dark;
+                color: $dark;
+                border-radius: 40px;
+                padding: 0.6rem 1rem;
+            }
+        }
+        
+    }
+    .menu-detail{
+        @media(max-width: $sm){
+            align-self: center;
+            justify-content: center;
+            
+        }
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 0;
+        border-bottom: 1px solid $grey;
+        flex-wrap: wrap;
+        color:$grey;
+        font-size: 1rem;
+        
+        .menu{
+            display: flex;
+            gap: 1rem;
+        }
+    }
+    .footer{
+        @extend .menu-detail;
+          border: none;
+    }
+}

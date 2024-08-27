@@ -1,0 +1,158 @@
+.hero{
+    @media(max-width:$lg){
+        flex-direction: column-reverse;
+        padding: 2rem;;
+    }
+    display: flex;
+    
+    background: $mid;
+    padding: $padding;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0;
+    gap: 1rem;
+    
+
+    .left{
+        @media(max-width: $lg){
+            align-items: center;
+            justify-content: center;
+        }
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        
+        height: 100%;
+        
+       
+        span{
+            @media(max-width: $lg){
+                font-size: 3rem;
+            }
+            @media(max-width: $sm){
+                font-size: 2rem;
+            }
+            img{
+                @media(max-width: $sm){
+                    width: 30%;
+                }
+            }
+            font-size: 3.875rem;
+            display: flex;
+            align-items: center;
+            font-family: $font;
+            
+              
+            
+        }
+        
+        .button-group{
+            @media(max-width: $lg){
+                padding-top: 0rem !important;
+                justify-content: center;
+                align-items: center;
+            }
+            padding-top: 4rem;
+            display: flex;
+            align-items: center;
+            gap: 0.1rem;
+            flex-wrap: wrap;
+
+            button{
+               
+                padding-left: 5px;
+                border-radius: 50px;
+                .button-p{
+                    line-height: 4px;
+                    color: $black;
+                    font-size: 13px;
+                    
+                    &>:nth-child(2){
+                        color: $grey;
+                    }
+                }
+                
+            }
+        }
+    }
+    .right{
+        display: flex;
+        position: relative;
+        
+        
+        .hero-img{
+            @media(max-width: $lg){
+                display: none;
+            }
+            position: absolute;
+            right: 2rem;
+            border: 1px solid $black;
+            border-radius: 25px;
+            padding: 1rem;
+            width: fit-content;
+            .hero-img-wrap{
+                display: flex;
+
+                gap: 1rem;
+                .left{
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.3rem;
+                    width: 100%;
+                    img{
+                        width: 100%;
+                        height: 55px;
+                    }
+                    .button{
+                        border-radius: 50px;
+                        width: 100%;
+                        height: 45px;
+                        img{
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+                .right{
+                    @extend .left;
+                }
+            }
+        }
+        img{
+            width: fit-content;
+        }
+        .group{
+            @media(max-width: $lg){
+                width: 100% !important;
+            }
+            align-self: flex-start;
+            justify-self: flex-start;
+    
+            width: 70%;
+
+        }
+        .anime-div{
+            @media(max-width: $sm){
+                justify-self: end;
+                align-self: end
+                
+            }
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            position: absolute;
+            right: 2rem;
+            bottom: 0;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .star{
+            
+            right: 22rem;
+            position: absolute;
+            top: 4rem;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.standard{
+    @media (max-width:$sm){
+        flex-direction: column;
+        padding: $paddings;
+        margin: 0 auto;
+        text-align: center;
+    }
+    @extend .flex;
+    padding: $padding;
+    background: $light;
+    gap: 1rem;
+    
+    .left{
+       
+        flex: 1;
+        img{
+            @media(max-width: $md){
+                width: 100%;
+            }
+            
+            max-width: 80%;
+
+        }
+    }
+    .right{
+        &>p{
+            font-family: $font;
+            font-size: 2.5rem;
+        }
+        flex: 1;
+        .flex{
+            gap: 1rem;
+            p{
+                b{
+                    font-family: $font;
+                    font-size: 1.25rem;
+                }
+                span{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

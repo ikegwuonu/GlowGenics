@@ -1,0 +1,598 @@
+.header {
+  background: #ffebf1;
+  padding: 1rem 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .header {
+    padding: 1rem 1rem;
+  }
+}
+.header .menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+@media (max-width: 800px) {
+  .header .menu {
+    display: none;
+  }
+}
+.header .menu p {
+  cursor: pointer;
+  color: #4e515d;
+}
+.header .menu .dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  gap: 0.4rem;
+}
+.header .menu-end {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+@media (max-width: 800px) {
+  .header .menu-end {
+    display: none;
+  }
+}
+.header .menu-end form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  gap: 0.3rem;
+  border: 1px solid #191d2d;
+  border-radius: 25px;
+  background: #ffebf1;
+  overflow: hidden;
+}
+.header .menu-end form input {
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 3px;
+  padding-left: 0.6rem;
+}
+.header .menu-end img {
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  background: #f8cad7;
+  padding: 6rem 6rem;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0;
+  gap: 1rem;
+}
+@media (max-width: 1030px) {
+  .hero {
+    flex-direction: column-reverse;
+    padding: 2rem;
+  }
+}
+.hero .left, .hero .right .hero-img .hero-img-wrap .right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+}
+@media (max-width: 1030px) {
+  .hero .left, .hero .right .hero-img .hero-img-wrap .right {
+    align-items: center;
+    justify-content: center;
+  }
+}
+.hero .left span, .hero .right .hero-img .hero-img-wrap .right span {
+  font-size: 3.875rem;
+  display: flex;
+  align-items: center;
+  font-family: "Pinyon Script", cursive;
+}
+@media (max-width: 1030px) {
+  .hero .left span, .hero .right .hero-img .hero-img-wrap .right span {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .hero .left span, .hero .right .hero-img .hero-img-wrap .right span {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .hero .left span img, .hero .right .hero-img .hero-img-wrap .right span img {
+    width: 30%;
+  }
+}
+.hero .left .button-group, .hero .right .hero-img .hero-img-wrap .right .button-group {
+  padding-top: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+  flex-wrap: wrap;
+}
+@media (max-width: 1030px) {
+  .hero .left .button-group, .hero .right .hero-img .hero-img-wrap .right .button-group {
+    padding-top: 0rem !important;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.hero .left .button-group button, .hero .right .hero-img .hero-img-wrap .right .button-group button {
+  padding-left: 5px;
+  border-radius: 50px;
+}
+.hero .left .button-group button .button-p, .hero .right .hero-img .hero-img-wrap .right .button-group button .button-p {
+  line-height: 4px;
+  color: #191d2d;
+  font-size: 13px;
+}
+.hero .left .button-group button .button-p > :nth-child(2), .hero .right .hero-img .hero-img-wrap .right .button-group button .button-p > :nth-child(2) {
+  color: #4e515d;
+}
+.hero .right {
+  display: flex;
+  position: relative;
+}
+.hero .right .hero-img {
+  position: absolute;
+  right: 2rem;
+  border: 1px solid #191d2d;
+  border-radius: 25px;
+  padding: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media (max-width: 1030px) {
+  .hero .right .hero-img {
+    display: none;
+  }
+}
+.hero .right .hero-img .hero-img-wrap {
+  display: flex;
+  gap: 1rem;
+}
+.hero .right .hero-img .hero-img-wrap .left, .hero .right .hero-img .hero-img-wrap .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  width: 100%;
+}
+.hero .right .hero-img .hero-img-wrap .left img, .hero .right .hero-img .hero-img-wrap .right img {
+  width: 100%;
+  height: 55px;
+}
+.hero .right .hero-img .hero-img-wrap .left .button, .hero .right .hero-img .hero-img-wrap .left .trending .deals button, .trending .deals .hero .right .hero-img .hero-img-wrap .left button, .hero .right .hero-img .hero-img-wrap .right .button, .hero .right .hero-img .hero-img-wrap .right .trending .deals button, .trending .deals .hero .right .hero-img .hero-img-wrap .right button {
+  border-radius: 50px;
+  width: 100%;
+  height: 45px;
+}
+.hero .right .hero-img .hero-img-wrap .left .button img, .hero .right .hero-img .hero-img-wrap .left .trending .deals button img, .trending .deals .hero .right .hero-img .hero-img-wrap .left button img, .hero .right .hero-img .hero-img-wrap .right .button img, .hero .right .hero-img .hero-img-wrap .right .trending .deals button img, .trending .deals .hero .right .hero-img .hero-img-wrap .right button img {
+  width: 20px;
+  height: 20px;
+}
+.hero .right img {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.hero .right .group {
+  align-self: flex-start;
+  justify-self: flex-start;
+  width: 70%;
+}
+@media (max-width: 1030px) {
+  .hero .right .group {
+    width: 100% !important;
+  }
+}
+.hero .right .anime-div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  position: absolute;
+  right: 2rem;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .hero .right .anime-div {
+    justify-self: end;
+    align-self: end;
+  }
+}
+.hero .right .star {
+  right: 22rem;
+  position: absolute;
+  top: 4rem;
+}
+
+.trending {
+  background: #f8cad7;
+  padding: 6rem 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media (max-width: 500px) {
+  .trending {
+    padding: 2rem 1rem;
+  }
+}
+.trending .deals {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.trending .deals .deal > :first-child {
+  font-family: "Pinyon Script", cursive;
+  font-size: 2.5rem;
+  color: #191d2d;
+}
+.trending .deals .deal > :last-child {
+  font-size: 1rem;
+  color: #4e515d;
+}
+.trending .main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.trending .main .product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #ffebf1;
+  padding: 1rem;
+  border-top-left-radius: 50rem;
+  border-top-right-radius: 50rem;
+  border-bottom-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+}
+@media (max-width: 800px) {
+  .trending .main .product > img {
+    width: 100%;
+  }
+}
+.trending .main .product .deals .deal > :first-child {
+  color: #191d2d;
+  font-size: 1.25rem;
+}
+.trending .main .product .deals .deal > :last-child {
+  color: #4e515d;
+  font-size: 1rem;
+}
+
+.standard {
+  padding: 6rem 6rem;
+  background: #ffebf1;
+  gap: 1rem;
+}
+@media (max-width: 500px) {
+  .standard {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+.standard .left, .standard .hero .right .hero-img .hero-img-wrap .right, .hero .right .hero-img .hero-img-wrap .standard .right {
+  flex: 1;
+}
+.standard .left img, .standard .hero .right .hero-img .hero-img-wrap .right img, .hero .right .hero-img .hero-img-wrap .standard .right img {
+  max-width: 80%;
+}
+@media (max-width: 800px) {
+  .standard .left img, .standard .hero .right .hero-img .hero-img-wrap .right img, .hero .right .hero-img .hero-img-wrap .standard .right img {
+    width: 100%;
+  }
+}
+.standard .right {
+  flex: 1;
+}
+.standard .right > p {
+  font-family: "Pinyon Script", cursive;
+  font-size: 2.5rem;
+}
+.standard .right .flex, .standard .right .standard {
+  gap: 1rem;
+}
+.standard .right .flex p b, .standard .right .standard p b {
+  font-family: "Pinyon Script", cursive;
+  font-size: 1.25rem;
+}
+.standard .right .flex p span, .standard .right .standard p span {
+  font-size: 1rem;
+}
+
+.latest {
+  background: url("../assets/Upcoming.png");
+  background-size: cover;
+  padding: 6rem 6rem;
+}
+.latest div .one {
+  font-family: "Pinyon Script", cursive;
+  color: #191d2d;
+  font-size: 2.5rem;
+}
+.latest div .two {
+  font-family: "Pinyon Script", cursive;
+  color: #e42b5f;
+  font-size: 2.5rem;
+}
+.latest div .three {
+  color: #4e515d;
+  font-size: 1rem;
+  width: clamp(50ch, 50%, 60ch);
+}
+@media (max-width: 600px) {
+  .latest div .three {
+    width: clamp(30ch, 60%, 40ch);
+  }
+}
+.latest button {
+  border: 1px solid #e42b5f;
+  color: #e42b5f;
+  padding: 1rem 2rem;
+  background: transparent;
+  font-size: 1rem;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.latest button img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.testimonials {
+  padding: 6rem 6rem;
+  padding-bottom: 5rem;
+  background: #f8cad7;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media (max-width: 500px) {
+  .testimonials {
+    padding: 2rem 1rem;
+  }
+}
+.testimonials .intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonials .intro .left > :first-child, .testimonials .intro .hero .right .hero-img .hero-img-wrap .right > :first-child, .hero .right .hero-img .hero-img-wrap .testimonials .intro .right > :first-child {
+  font-size: 2.5rem;
+  color: #191d2d;
+}
+.testimonials .intro .left > :last-child, .testimonials .intro .hero .right .hero-img .hero-img-wrap .right > :last-child, .hero .right .hero-img .hero-img-wrap .testimonials .intro .right > :last-child {
+  font-size: 1rem;
+  color: #4e515d;
+}
+.testimonials .main {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.testimonials .main .testimonial {
+  flex: 1;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #ffebf1;
+  border-top-left-radius: 50rem;
+  border-top-right-radius: 50rem;
+  border-bottom-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.testimonials .main .testimonial .name {
+  font-weight: bold;
+}
+.testimonials .main .testimonial p {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.subscribe {
+  background-color: white;
+  padding: 6rem 6rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+@media (max-width: 500px) {
+  .subscribe {
+    padding: 2rem 1rem;
+  }
+}
+.subscribe .jumbotron {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-self: center;
+  background-color: white;
+  max-width: 85%;
+  justify-self: center;
+  border-radius: 30px;
+  position: absolute;
+  top: -4rem;
+}
+@media (max-width: 500px) {
+  .subscribe .jumbotron {
+    flex-direction: column;
+    position: relative;
+    top: auto;
+    padding: 1rem;
+    gap: 1rem;
+  }
+}
+.subscribe .jumbotron .pink {
+  font-family: "Pinyon Script", cursive;
+  font-size: 2.5rem;
+}
+.subscribe .jumbotron form {
+  border: 1px solid #4e515d;
+  padding: 5px;
+  border-radius: 10px;
+}
+.subscribe .jumbotron form input {
+  border: none;
+  outline: none;
+}
+.subscribe .jumbotron form button {
+  background: inherit;
+  border: 1px solid #e42b5f;
+  color: #e42b5f;
+  border-radius: 40px;
+  padding: 0.6rem 1rem;
+}
+.subscribe .menu-detail, .subscribe .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+  border-bottom: 1px solid #4e515d;
+  flex-wrap: wrap;
+  color: #4e515d;
+  font-size: 1rem;
+}
+@media (max-width: 500px) {
+  .subscribe .menu-detail, .subscribe .footer {
+    align-self: center;
+    justify-content: center;
+  }
+}
+.subscribe .menu-detail .menu, .subscribe .footer .menu {
+  display: flex;
+  gap: 1rem;
+}
+.subscribe .footer {
+  border: none;
+}
+
+.assistance {
+  padding: 6rem 6rem;
+  background-color: #ffebf1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .assistance {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+}
+.assistance .left, .assistance .hero .right .hero-img .hero-img-wrap .right, .hero .right .hero-img .hero-img-wrap .assistance .right {
+  flex: 0.6;
+}
+.assistance .left > :first-child, .assistance .hero .right .hero-img .hero-img-wrap .right > :first-child, .hero .right .hero-img .hero-img-wrap .assistance .right > :first-child {
+  font-family: "Pinyon Script", cursive;
+  font-size: 2.5rem;
+}
+.assistance .left .image, .assistance .hero .right .hero-img .hero-img-wrap .right .image, .hero .right .hero-img .hero-img-wrap .assistance .right .image {
+  display: flex;
+  background: white;
+  gap: 1rem;
+  border-radius: 35px;
+  padding: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.assistance .right {
+  flex: 0.4;
+  border-radius: 5px;
+  background-color: white;
+  padding: 2rem;
+}
+.assistance .right > :first-child {
+  font-size: 1.5rem;
+  font-family: "Pinyon Script", cursive;
+}
+.assistance .right form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.assistance .right form input {
+  outline: none;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid gray;
+  background: inherit;
+  padding: 5px 0;
+}
+.assistance .right form button {
+  background-color: inherit;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #e42b5f;
+  border: 1px solid #e42b5f;
+  padding: 1rem;
+  border-radius: 30px;
+  display: flex;
+  gap: 0.5rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  min-width: 100vw;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.pink {
+  color: #e42b5f;
+}
+
+.grey {
+  color: #4e515d;
+}
+
+.flex, .standard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button, .trending .deals button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 40px;
+  background: inherit;
+  width: -moz-fit-content;
+  width: fit-content;
+  overflow: clip;
+  padding: 0.2rem 1.3rem;
+  font-size: 14px;
+}/*# sourceMappingURL=main.css.map */
